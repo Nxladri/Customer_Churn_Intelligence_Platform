@@ -2,6 +2,10 @@ import streamlit as st
 import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
+import insights
+import os
+from dotenv import load_dotenv
+
 
 
 
@@ -69,6 +73,21 @@ if seg_churn_rate > overall_churn_rate:
     st.warning(f"{segment} has higher churn than average!")
 else:
     st.success(f"{segment} is performing better than average.")
+
+
+# # LLM generated buisness strategies to segemnt specific customers
+# load_dotenv()
+# st.write("DEBUG KEY:", os.getenv("GOOGLE_API_KEY"))
+
+
+if(st.button("Generate Insights")):
+    with st.spinner("Generating AI insights..."):
+        prompt = insights.generate_prompt(segment, seg_total, seg_churn, seg_churn_rate)
+        ai_response = insights.customer_insights_extraction(prompt)
+        clean_op = insights.clean_output(ai_response)
+        st.subheader("📊 AI Suggested Business Insights & Strategies")
+        st.write(clean_op)
+
 
 
 chart_df = pd.DataFrame({
