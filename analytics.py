@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import insights
 import os
-from dotenv import load_dotenv
 
 
 
@@ -76,9 +75,6 @@ else:
 
 
 # # LLM generated buisness strategies to segemnt specific customers
-# load_dotenv()
-# st.write("DEBUG KEY:", os.getenv("GOOGLE_API_KEY"))
-
 
 if(st.button("Generate Insights")):
     with st.spinner("Generating AI insights..."):

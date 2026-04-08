@@ -1,22 +1,7 @@
-# An auto generation text using google gemini api 
-# import google.generativeai as genai
-# import os
-# from dotenv import find_dotenv, load_dotenv
 
-# # load .env file
-# env_path = find_dotenv()
-# print("ENV PATH FOUND:", env_path)
-# load_dotenv(env_path)
-# print(f"DEBUG: My Key is -> {os.getenv('GOOGLE_API_KEY')}") # Check your terminal output
-# key = os.getenv('GOOGLE_API_KEY')
-# print("RAW KEY:", key)
-# print("TYPE:", type(key))
-# print("LENGTH:", len(key) if key else "None")
-# print("STARTS WITH:", key[:5] if key else "None")
-
-# print(f"File found: {find_dotenv()}") # This should print the path to your .env
-# print(api_key)
-
+# An auto generated text using ollama API, which is a local LLM hosting solution. 
+# It allows us to run large language models on our own machines without relying on external APIs, 
+# ensuring data privacy and faster response times.
 
 def customer_insights_extraction(prompt):
     import requests
