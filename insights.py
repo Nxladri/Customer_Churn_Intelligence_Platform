@@ -71,8 +71,7 @@ FORMAT:
 Key Insight:
 (mention exact churn rate and what it means)
 
-Risk Level:
-(Low/Medium/High)
+
 
 Action Plan:
 1. (specific action)
