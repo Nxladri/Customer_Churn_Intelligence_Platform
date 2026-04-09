@@ -32,8 +32,6 @@ y_pred = (y_prob >= threshold).astype(int)
 
 
 st.markdown("Threshold for Churn Prediction: " + str(threshold))
-st.subheader("Predictions are based on the full dataset")
-
 print("Accuracy:", accuracy_score(y_test, (y_prob >= 0.45)))
 print("Threshold:", threshold)
 print("Test size:", X_test.shape)
