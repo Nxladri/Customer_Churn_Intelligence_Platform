@@ -75,7 +75,8 @@ else:
 
 
 # # LLM generated buisness strategies to segemnt specific customers
-
+# Experimental module: LLM-based retention message generator
+# Not included in production pipeline due to performance constraints
 
 
 chart_df = pd.DataFrame({

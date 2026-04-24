@@ -2,6 +2,9 @@
 # An auto generated text using ollama API, which is a local LLM hosting solution. 
 # It allows us to run large language models on our own machines without relying on external APIs, 
 # ensuring data privacy and faster response times.
+# --------------------------------------------------------------------------
+# Experimental module: LLM-based retention message generator
+# Not included in production pipeline due to performance and deployment constraints
 
 def customer_insights_extraction(prompt):
     import requests
