@@ -21,7 +21,7 @@ Model Persistence
 Joblib (Saving trained models and preprocessing pipelines)
 
 🔹 Dataset
-Primarly Microsoft AdventureWorks 2019 OLTP database used for feature engineering
+Microsoft AdventureWorks 2019 OLTP database used for feature engineering and to make the dataset consists of 19119 customers with 14 different attributes
 
 The dataset consists of customer transaction and purchase history, including:
 
