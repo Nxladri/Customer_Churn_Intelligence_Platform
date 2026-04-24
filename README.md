@@ -114,6 +114,10 @@ Avoiding data leakage during model training
 Managing multicollinearity between features
 Deployment limitations in Power BI Service (organizational access required)
 
+🔹 Experimental Features
+
+An LLM-based retention message generator was explored as part of the project to automate customer engagement strategies. However, due to latency and deployment constraints with local models, it has been kept as a prototype and not integrated into the main pipeline
+
 🔹 Future Enhancements
 Real-time data pipeline using APIs
 Integration with cloud platforms for scalability
