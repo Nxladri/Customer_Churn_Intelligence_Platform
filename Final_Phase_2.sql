@@ -2,9 +2,13 @@ CREATE VIEW Sales.CustomerChurnPredictionFeature AS
 WITH CTE_1 AS
 (
 	-- Total Revenue , AvgOrderValue, most and least recent order date
+
 	SELECT H.CustomerID,SUM(D.LineTotal) AS TotalRevenue,
 	COUNT(DISTINCT D.SalesOrderID) AS OrderFrequency,
-	(SUM(D.LineTotal) * 1.0 / NULLIF(COUNT(DISTINCT D.SalesOrderID),0)) AS AvgOrderValue,
+
+	(SUM(D.LineTotal) * 1.0 / NULLIF(COUNT(DISTINCT D.SalesOrderID),0))
+	AS AvgOrderValue,
+
 	MAX(H.OrderDate) MostRecentOrderDate,
 	MIN(H.OrderDate) LeastRecentOrderDate
 	FROM Sales.SalesOrderDetail AS D
@@ -135,3 +139,5 @@ SELECT
     OneTimeBuyer,
     ChurnLabel
 FROM LastButNotTheLeast;
+
+SELECT * FROM Sales.CustomerChurnPredictionFeature

@@ -32,7 +32,7 @@ y_pred = (y_prob >= threshold).astype(int)
 
 
 st.markdown("Threshold for Churn Prediction: " + str(threshold))
-print("Accuracy:", accuracy_score(y_test, (y_prob >= 0.45)))
+print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Threshold:", threshold)
 print("Test size:", X_test.shape)
 # Model Performance

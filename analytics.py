@@ -76,14 +76,6 @@ else:
 
 # # LLM generated buisness strategies to segemnt specific customers
 
-if(st.button("Generate Insights")):
-    with st.spinner("Generating AI insights..."):
-        prompt = insights.generate_prompt(segment, seg_total, seg_churn, seg_churn_rate)
-        ai_response = insights.customer_insights_extraction(prompt)
-        clean_op = insights.clean_output(ai_response)
-        st.subheader("📊 AI Suggested Business Insights & Strategies")
-        st.write(clean_op)
-
 
 
 chart_df = pd.DataFrame({

@@ -14,7 +14,7 @@ def customer_insights_extraction(prompt):
                 "prompt": prompt,
                 "stream": False
             },
-            timeout=120
+            timeout=180
         )
 
         data = response.json()
